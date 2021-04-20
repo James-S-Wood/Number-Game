@@ -19,7 +19,7 @@ public class GuessingGame {
 
     public static String determineGuess(int userAnswer, int computerNumber, int count){
         if (userAnswer <=0 || userAnswer >100) {
-            return "Your guess is wrong";
+            return "Your guess is invalid";
         }
         else if (userAnswer == computerNumber ){
             return "Correct!\nTotal Guesses: " + count;
